@@ -3,6 +3,6 @@
 i=1
 while [ "$i" -le 10 ]
 do
-1-for_best_school echo "Best School"
-1-for_best_school i=$((i + 1))
+echo "Best School"
+i=$((i + 1))
 done
