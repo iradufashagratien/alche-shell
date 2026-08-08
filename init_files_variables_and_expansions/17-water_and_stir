@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%o\n" $((5#$(tr 'water' '01234' <<< "$WATER") + 4#$(tr 'stir' '0123' <<< "$STIR"))) | tr '01234567' 'bestchol'
+python3 -c "print(oct(__import__('functools').reduce(lambda v,c:v*5+'water'.index(c),__import__('os').environ['WATER'],0)+__import__('functools').reduce(lambda v,c:v*4+'stir'.index(c),__import__('os').environ['STIR'],0))[2:].translate(str.maketrans('01234567','bestchol')))"

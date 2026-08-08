@@ -10,7 +10,7 @@ two lines long, Ubuntu 20.04-compatible, and avoid `&&`, `||`, `;`,
 | File | Description |
 |---|---|
 | `0-alias` | Creates an alias `ls` whose value is `rm *`. |
-| `1-hello_you` | Prints `hello <current_user>` via `whoami`. |
+| `1-hello_you` | Prints `hello $USER`. |
 | `2-path` | Appends `/action` to the end of `$PATH` (must be `source`d). |
 | `3-paths` | Counts the number of directories currently in `$PATH`. |
 | `4-global_variables` | Lists all environment (global) variables via `env`. |
