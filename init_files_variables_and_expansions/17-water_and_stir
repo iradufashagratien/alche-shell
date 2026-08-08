@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "print(oct(__import__('functools').reduce(lambda v,c:v*5+'water'.index(c),__import__('os').environ['WATER'],0)+__import__('functools').reduce(lambda v,c:v*4+'stir'.index(c),__import__('os').environ['STIR'],0))[2:].translate(str.maketrans('01234567','bestchol')))"
+python3 -c "print(''.join('bestchol'[int(d)] for d in oct(sum(__import__('functools').reduce(lambda val,c,m={c:i for i,c in enumerate(w)},b=len(w)+(1 if any(x not in {c:i for i,c in enumerate(w)} for x in s) else 0):val*b+(m[c] if c in m else len(w)),s,0) for s,w in ((__import__('os').environ['WATER'],'water'),(__import__('os').environ['STIR'],'stir'))))[2:]))"
