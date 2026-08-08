@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Kills the 7-highlander process using SIGKILL, since it is immune to SIGTERM
+pkill -9 -f 7-highlander
